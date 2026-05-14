@@ -206,13 +206,13 @@ class CentralReactor(QWidget):
         painter.drawArc(rect_outer, 225 * 16, 90 * 16)
 
 
-class JarvisGUI(QMainWindow):
+class FayzeeGUI(QMainWindow):
     def __init__(self, pause_event):
         super().__init__()
         self.pause_event = pause_event
         self.is_paused = False
         
-        self.setWindowTitle("JARVIS HUD")
+        self.setWindowTitle("FAYZEE HUD")
         self.resize(1000, 600)
         
         # Frameless and Black Background
@@ -262,6 +262,6 @@ class JarvisGUI(QMainWindow):
 
 def run_gui(pause_event):
     app = QApplication(sys.argv)
-    window = JarvisGUI(pause_event)
+    window = FayzeeGUI(pause_event)
     window.show()
     sys.exit(app.exec())

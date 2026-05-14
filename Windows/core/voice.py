@@ -27,7 +27,7 @@ def speak(text):
         text = "Task completed."
     
     # Print first so user sees it even if audio fails
-    print(f"JARVIS: {text}")
+    print(f"FAYZEE: {text}")
 
     # Use pyttsx3 for Windows (SAPI5)
     try:

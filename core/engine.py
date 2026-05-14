@@ -4,14 +4,14 @@ import re
 from groq import Groq
 from core.registry import SkillRegistry
 
-class JarvisEngine:
+class FayzeeEngine:
     def __init__(self, registry: SkillRegistry):
         self.registry = registry
         self.client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
         self.model_name = "llama-3.3-70b-versatile"
         
         self.system_instruction = (
-            "You are Jarvis, a helpful and precise AI assistant. "
+            "You are Fayzee, a helpful and precise AI assistant. "
             "Use the provided tools to answer the user's request. "
             "When using tools, output VALID JSON arguments only. "
             "Do NOT output the tool call as XML or with an equals sign. "

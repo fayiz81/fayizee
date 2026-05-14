@@ -9,7 +9,7 @@ load_dotenv()
 # Test Voice
 print("Testing Voice...")
 set_deep_male_voice()
-speak("This is a test of the deep male voice. I am JARVIS.")
+speak("This is a test of the deep male voice. I am FAYZEE.")
 
 # Test Weather
 print("\nTesting Weather...")

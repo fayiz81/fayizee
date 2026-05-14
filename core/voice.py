@@ -22,7 +22,7 @@ def set_deep_male_voice():
 
 set_deep_male_voice()
 
-# Global flag to check if Jarvis is speaking
+# Global flag to check if Fayzee is speaking
 is_speaking = False
 
 def speak(text):
@@ -31,7 +31,7 @@ def speak(text):
         text = "Task completed."
     
     # Print first so user sees it even if audio fails
-    print(f"JARVIS: {text}")
+    print(f"FAYZEE: {text}")
 
     # Set flag to True before speaking
     is_speaking = True

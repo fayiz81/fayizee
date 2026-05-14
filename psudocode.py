@@ -80,7 +80,7 @@ import os                       # For interacting with the operating system (e.g
 #     # SITE: Control
 #     # ACTION: Terminate the assistant's execution loop.
 #     ELSE IF "exit" in command:
-#         speak("Goodbye, shutting down Jarvis.")
+#         speak("Goodbye, shutting down Fayzee.")
 #         EXIT program
 #     
 #     # FALLBACK
@@ -96,7 +96,7 @@ import os                       # For interacting with the operating system (e.g
 # 2. Enter a 'While True' loop to continuously listen and respond.
 #
 # MAIN LOOP:
-#     speak("Hello Ishit, I am Jarvis. How can I assist you?")
+#     speak("Hello Ishit, I am Fayzee. How can I assist you?")
 #     WHILE True:
 #         command = listen_command()
 #         IF command != "none":

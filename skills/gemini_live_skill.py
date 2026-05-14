@@ -66,21 +66,21 @@ class GeminiLiveSkill(Skill):
 
             print(f"[GeminiLiveSkill] Launching {script_path}...")
             
-            # Pause JARVIS
+            # Pause FAYZEE
             if self.pause_event:
                 self.pause_event.set()
-                print("[GeminiLiveSkill] Paused JARVIS main loop.")
+                print("[GeminiLiveSkill] Paused FAYZEE main loop.")
 
             # Launch process
             # use sys.executable to ensure we use the same python interpreter (venv)
             process = subprocess.Popen([sys.executable, script_path])
             
-            # Spawn a thread to wait for the process to finish and then resume JARVIS
+            # Spawn a thread to wait for the process to finish and then resume FAYZEE
             def monitor_process(proc, pause_evt):
                 proc.wait()
                 if pause_evt:
                     pause_evt.clear()
-                    print("[GeminiLiveSkill] Resumed JARVIS main loop.")
+                    print("[GeminiLiveSkill] Resumed FAYZEE main loop.")
 
             monitor_thread = threading.Thread(target=monitor_process, args=(process, self.pause_event), daemon=True)
             monitor_thread.start()

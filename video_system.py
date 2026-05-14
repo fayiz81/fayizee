@@ -21,7 +21,7 @@ def speak(text):
     t.start()
 
 def run_vision_system():
-    print("--- JARVIS VISION SYSTEM ONLINE ---")
+    print("--- FAYZEE VISION SYSTEM ONLINE ---")
     print("Press 'q' to exit vision mode.")
     
     # 1. Load Model
@@ -93,7 +93,7 @@ def run_vision_system():
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
         # Show Window
-        cv2.imshow("JARVIS Vision System (Press 'q' to Quit)", annotated_frame)
+        cv2.imshow("FAYZEE Vision System (Press 'q' to Quit)", annotated_frame)
 
         # Exit on 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):
